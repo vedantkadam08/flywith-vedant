@@ -5,68 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fly With Vedant | Aspiring CPL Pilot</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Inter & Outfit for modern clean typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Airplane Scroll Transition Element -->
-    <div class="airplane-transition" id="plane">✈️</div>
+    <!-- Sleek Custom Airplane Scroll Indicator -->
+    <div class="airplane-scroll" id="plane">
+        <svg viewBox="0 0 24 24" width="28" height="28" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.5 1c-.2.4-.1.9.3 1.2L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.1 5.5c.3.4.8.5 1.2.3l1-.5c.4-.2.6-.6.5-1.1z"></path>
+        </svg>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">@flywith.vedant</div>
+        <div class="nav-links">
+            <a href="#about">The Journey</a>
+            <a href="#training">South Africa</a>
+            <a href="#connect" class="nav-cta">Connect</a>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <!-- Instagram Profile Picture -->
-            <div class="profile-container">
-                <img src="https://images.unsplash.com/photo-1569154941061-e231b4725ef1?auto=format&fit=crop&w=300&q=80" alt="Vedant Profile Picture" class="profile-pic">
+            <div class="profile-ring">
+                <img src="pfp.jpg" alt="Vedant Profile Picture" class="profile-pic" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80'">
             </div>
+            <span class="badge">STUDENT PILOT • CPL TRACK</span>
             <h1>FLY WITH VEDANT</h1>
-            <p>Aspiring Commercial Pilot (CPL) ✈️ | Aviation Content Creator</p>
-            <a href="#about" class="btn">Explore The Journey</a>
+            <p>Documenting the raw journey from aviation enthusiast to Commercial Pilot License.</p>
+            <div class="hero-buttons">
+                <a href="#about" class="btn primary">Explore Journey</a>
+                <a href="https://www.instagram.com/flywith.vedant/" target="_blank" class="btn outline">Instagram Reels</a>
+            </div>
         </div>
     </section>
 
     <!-- About & Self-Studying Section -->
     <section id="about" class="section">
         <div class="container">
-            <h2>The Cockpit Mission</h2>
-            <p class="lead">Documenting my journey from an aviation enthusiast to earning a Commercial Pilot License. Every single flight hour brings me closer to the left seat.</p>
+            <div class="section-header">
+                <h2>THE MISSION</h2>
+                <p>Building a solid foundation from the ground up.</p>
+            </div>
             
-            <div class="grid-cards">
+            <div class="bento-grid">
                 <!-- Self-Studying Card -->
-                <div class="feature-box">
-                    <h3>📚 Self-Studying Ground School</h3>
-                    <p>Mastering aviation meteorology, air navigation, air regulations, and technical general knowledge entirely through self-study, discipline, and absolute dedication.</p>
+                <div class="bento-card">
+                    <div class="card-icon">📚</div>
+                    <h3>Self-Studying Ground School</h3>
+                    <p>Mastering complex aviation subjects—from Air Navigation and Meteorology to Air Regulations—entirely through independent discipline, consistency, and rigorous self-study.</p>
                 </div>
 
-                <!-- South Africa Training Card -->
-                <div class="feature-box highlight">
-                    <h3>🌍 Next Stop: South Africa (SA)</h3>
-                    <p>Taking flight training across continents to build crucial hours, master complex cross-country routes, and train under the magnificent skies of South Africa.</p>
+                <!-- Aviation Vibe Card -->
+                <div class="bento-card">
+                    <div class="card-icon">🎯</div>
+                    <h3>The CPL Objective</h3>
+                    <p>Every single hour logged, every system memorized, and every cockpit checklist executed is one step closer to sitting in the left seat of a commercial airliner.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Gallery / Reels Section -->
-    <section id="gallery" class="section dark-bg">
+    <!-- South Africa Flight Training Section -->
+    <section id="training" class="section alt-bg">
         <div class="container">
-            <h2>Cockpit Vibes & Edits</h2>
-            <p class="lead">Catch the latest cinematic edits, takeoff sequences, and life inside training aircraft like the Cessna 172.</p>
-            <div class="social-cta">
-                <a href="https://www.instagram.com/flywith.vedant/" target="_blank" class="btn secondary">Watch Instagram Reels (@flywith.vedant)</a>
+            <div class="sa-banner">
+                <div class="sa-content">
+                    <span class="badge-sa">NEXT CHAPTER</span>
+                    <h2>Flight Training in South Africa 🌍</h2>
+                    <p>Taking my flight training across international borders. South Africa offers world-class airspace, diverse weather systems, and massive cross-country routes—making it the ideal environment to build hours and master advanced flying.</p>
+                    <ul class="sa-list">
+                        <li>✓ Hour Building under clear skies</li>
+                        <li>✓ Complex cross-country navigation</li>
+                        <li>✓ Real-world commercial flight operations</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Connect Me Section (Direct IG DM Link) -->
-    <section id="connect" class="section footer">
-        <div class="container">
-            <h2>Connect With Me</h2>
-            <p class="lead">Want to chat about flight training, ask questions about ground school, or collaborate? Slide into my DMs!</p>
-            <!-- Direct link to Instagram DM -->
-            <a href="https://ig.me/m/flywith.vedant" target="_blank" class="btn dm-btn">💬 Send an Instagram DM</a>
-            <p class="copyright">© 2026 Fly With Vedant. All rights reserved.</p>
+    <!-- Connect Me Section -->
+    <section id="connect" class="section footer-section">
+        <div class="container text-center">
+            <h2>LET'S CONNECT</h2>
+            <p>Got questions about ground school, flight training, or want to collaborate? Slide straight into my DMs.</p>
+            <a href="https://ig.me/m/flywith.vedant" target="_blank" class="btn dm-btn">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                Direct IG Message (@flywith.vedant)
+            </a>
+            <p class="footer-copy">© 2026 Fly With Vedant. Built for the skies.</p>
         </div>
     </section>
 
