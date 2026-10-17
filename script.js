@@ -6,10 +6,10 @@ window.addEventListener('scroll', () => {
     // Calculate scroll percentage
     const scrollProgress = currentScroll / scrollTotal;
     
-    // Move the airplane down the screen based on scroll position
-    const topPosition = scrollProgress * window.innerHeight;
+    // Move the airplane indicator down the right side of the screen smoothly
+    const topPosition = scrollProgress * (window.innerHeight - 150) + 50;
     plane.style.top = `${topPosition}px`;
     
-    // Bank the airplane slightly depending on scroll progress
-    plane.style.transform = `translateX(-50%) rotate(${scrollProgress * 45}deg)`;
+    // Rotate airplane slightly based on scroll depth
+    plane.style.transform = `rotate(${scrollProgress * 30}deg)`;
 });
